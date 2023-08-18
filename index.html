@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <!-- CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+        <!-- Components -->
+        <script src="global/js/scripts-home.js" type="module"></script>
+        <!-- Styles -->
+        <link href="global/styles/global.css" rel="stylesheet">   
+        <title>
+            Martin Duggan // Product Designer // Portfolio 2022
+        </title>
+        <!-- Hotjar Tracking Code for folio23 -->
+    </head>
+    <body class="theme-home">
+        <folio-header></folio-header>
+        <main class="folio-home">
+            <home-intro class="flex-row flex-row--center"></home-intro>
+            <section class="folio-home--recent-work">
+                <h2 id="recent-work" 
+                    class="folio-home--subtitle mt3">
+                        Recent work
+                </h2>
+                <ul class="folio-home--projects">
+                    <li>
+                        <home-dcl></home-dcl>
+                    </li>
+                    <li>
+                        <home-webstore></home-webstore>
+                    </li>
+                    <li>
+                        <home-flexlabel></home-flexlabel>
+                    </li>
+                    <!-- <li>
+                        <home-dropship></home-dropship>
+                    </li> -->
+                    <li>
+                        <home-dsm></home-dsm>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <folio-footer></folio-footer>
+    </body>
+</html>
