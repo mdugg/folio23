@@ -1,0 +1,107 @@
+// mixins
+@mixin nav-active--mobile {
+    &:before {
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        border-radius: .5rem;
+        background-color: var(--folio-turq);
+        margin-right: 1rem;
+        content: '';
+    }
+}
+
+// navigation
+.theme-home {
+    .mobile-nav--link.nav-home {
+        @include nav-active--mobile;
+    }
+}
+// resume
+.theme-resume {
+    .mobile-nav--link.nav-resume {
+        @include nav-active--mobile;
+    }
+}
+// profile
+.theme-profile {
+    .mobile-nav--link.nav-profile {
+        @include nav-active--mobile;
+    }
+}
+// decoupled live
+.theme-dcl {
+    .mobile-nav--link.nav-dcl {
+        @include nav-active--mobile;
+    }
+}
+// webstore
+.theme-webstore {
+    .mobile-nav--link.nav-webstore {
+        @include nav-active--mobile;
+    }
+    .header-video {
+        background-color: var(--color-webstore);
+    }
+    .project {
+        color: var(--color-webstore);
+    }
+    .h3-content_section:before {
+        background-color: var(--color-webstore);
+    }
+    .folio-pullquote {
+        border-left-color: var(--color-webstore);
+    }
+    .webstore-stats-item {
+        background-color: var(--color-webstore);
+    }
+}
+// flexlabel
+.theme-flexlabel {
+    .mobile-nav--link.nav-flexlabel {
+        @include nav-active--mobile;
+    }
+    .header-video {
+        background-color: var(--color-flexlabel);
+    }
+    .project {
+        color: var(--color-flexlabel);
+    }
+    .h3-content_section:before {
+        background-color: var(--color-flexlabel);
+    }
+    .folio-pullquote {
+        border-left-color: var(--color-flexlabel);
+    }
+}
+// dsm
+.theme-dsm {
+    dsm-header {
+        width: 100%;
+    }
+    .header-illus {
+        width: 100%;
+        height: 20rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color:var(--color-dsm);
+
+        svg {
+            height: 80%;
+        }
+    }
+    .mask {
+        display: flex;
+        border: 1px solid var(--folio-grey__light06);
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+
+        img {
+            margin-top: -2.5rem; 
+        }
+    }
+
+}

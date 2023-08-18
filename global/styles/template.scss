@@ -1,0 +1,218 @@
+
+// header
+.folio-header {
+    font-family: var(--text-sans);
+    padding: 1rem 8rem;
+}
+.folio-header--link {
+    width: 10rem;
+    height: 4rem;
+
+    &:hover {
+        .md-logotype {
+            fill: var(--folio-turq-light);
+        }
+    }
+}
+.md-logotype {
+    fill: var(--folio-turq);
+    transition: var(--transition01);
+}
+// footer
+.folio-footer {
+    @extend .folio-header;
+    padding: 1rem;
+    position: relative;
+}
+
+
+// navigation
+.folio-nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+    &__item {
+        margin: 0 .75rem;
+
+        .has-icon {
+            padding-right: 1.25rem;
+        }
+    }
+    &__icon {
+        fill: var(--folio-grey__light01);
+        height: 1rem;
+        width: 1rem;
+        margin-left: .25rem;
+        position: absolute;
+        right: 0;
+        top: center;
+    }
+}
+.folio-nav__link {
+    color: var(--folio-grey__dark01);
+    font-size: .875rem;
+    font-weight: var(--text-sans-bold);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .05rem;
+    line-height: 1;
+    padding: .5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: .25rem;
+        background-color: var(--folio-turq);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: var(--transition01);
+        content: '';
+    }
+
+    &:hover:before {
+        transform: scaleX(1);
+    }
+}
+.folio-sm {
+    &--item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &--links {
+        display: flex;
+        flex-direction: row;
+    }
+    &--link {
+        display: flex;
+        margin-left: 1.5rem;
+    }
+    &--link_icon {
+        display: flex;
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: var(--folio-grey__light02);
+        transition: var(--transition01);
+    }
+    &--link_icon:hover {
+        fill: var(--folio-turq);
+    }
+
+}
+.folio-nav--button {
+    display: none;
+    width: 4rem;
+    height: 4rem;
+}
+.folio-nav--bars {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    .line {
+        fill:none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke: var(--folio-turq);
+        stroke-width:5.5;
+        stroke-linecap:round;
+    }
+    .top {
+        stroke-dasharray: 40 139;
+    }
+    .bottom {
+        stroke-dasharray: 40 180;
+    }
+    &.active .top {
+    stroke-dashoffset: -98px;
+    }
+    &.active .bottom {
+        stroke-dashoffset: -138px;
+    }
+    &.active {
+        transform: rotate(45deg);
+    }
+}
+.btn-scroll {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: .875rem;
+    font-weight: var(--text-sans-bold);
+    text-decoration: none;
+    color: (--folio-grey__dark01);
+    transition: var(--transition01);
+
+    &--icon {
+        height: 1.25rem;
+        margin-left: .5rem;
+        transition: var(--transition01);
+    }
+
+    &:hover {
+        color: var(--folio-turq);
+
+        .btn-scroll--icon {
+            fill: var(--folio-turq);
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .folio-header {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .folio-header {
+        justify-content: space-between;
+    }
+    .folio-nav,
+    .folio-sm--links {
+        display: none;
+    }
+    .folio-nav--button {
+        display: flex;
+    }
+    .btn-scroll {
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 660px) {
+    .folio-header {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media screen and (max-width: 520px) {
+    .folio-header--link {
+        width: 6rem;
+        height: 3rem;
+    }
+    .folio-nav--button {
+        height: 3rem;
+    }
+}

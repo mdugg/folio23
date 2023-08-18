@@ -1,0 +1,73 @@
+{
+	"home": {
+		"id": "home",
+		"linkName": "Home",
+		"linkURL": "/folio22/",
+		"type": "page",
+		"published": true
+	},
+	"work": {
+		"linkName": "Recent Work",
+		"linkURL": "/folio22/#recent-work",
+		"type": "page",
+		"published": true
+	},
+	"profile": {
+		"linkName": "Profile",
+		"linkURL": "/folio22/pages/martin-duggan-profile.html",
+		"type": "page",
+		"published": true
+	},
+	"resume": {
+		"linkName": "Resume",
+		"linkURL": "/folio22/pages/martin-duggan-resume.html",
+		"type": "page",
+		"published": true
+	},
+	"linkedin": {
+		"linkName": "Linkedin",
+		"linkURL": "https://www.linkedin.com/in/martinduggan/",
+		"type": "external"
+	},
+	"github": {
+		"linkName": "Github",
+		"linkURL": "https://github.com/mdugg",
+		"type": "external"
+	},
+	"dropship": {
+		"linkName": "Dropshipping",
+		"linkURL": "/folio22/case-studies/dropshipping/index.html",
+		"type": "project",
+		"published": true
+	},
+	"dcl": {
+		"linkName": "Decoupled Live",
+		"linkURL": "/folio22/case-studies/decoupled/index.html",
+		"type": "project",
+		"published": true
+	},
+	"flexlabel": {
+		"linkName": "Flexible Shipping Labels",
+		"linkURL": "/folio22/case-studies/flexlabels/index.html",
+		"type": "project",
+		"published": true
+	},
+	"webstore": {
+		"linkName": "Webstore Editor",
+		"linkURL": "/folio22/case-studies/webstore/index.html",
+		"type": "project",
+		"published": false
+	},
+	"pos": {
+		"linkName": "Point-of-Sale Wires",
+		"linkURL": "/folio22/case-studies/pos/index.html",
+		"type": "project",
+		"published": false
+	},
+	"dsm": {
+		"linkName": "Design System Foundational Work",
+		"linkURL": "/folio22/case-studies/design-system/index.html",
+		"type": "project",
+		"published": false
+	}
+}

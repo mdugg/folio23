@@ -1,0 +1,47 @@
+{
+    "intro": {
+        "headline": "strategy driven product designer for <span class=\"no-wrap\">e-commerce</span> and software projects",
+        "text" : ["Hello, welcome, and thank you for taking the time to review my latest portfolio. This folio includes case studies of projects I advanced and completed while working with <a class=\"folio-link\" href=\"https://try.commentsold.com\" target=\"_blank\">CommentSold</a>.", "These projects were in the exciting new domain of <strong class=\"no-wrap\">'Livestreaming E-commerce'</strong> which involves integration with social media platforms, patterns of <span class=\"no-wrap\">e-commerce</span>, and design for web apps and native mobile applications."],
+        "illusImg": "https://folio22.s3.amazonaws.com/home-double-diamond-illus.png",
+        "illusImgAlt": "Double-diamond work process"
+    },
+    "dcl": {
+        "video": "https://folio22.s3.amazonaws.com/dcl/live-selling-maddy-compressed.mp4",
+        "thumb": "https://folio22.s3.amazonaws.com/dcl/design-live-dash-thumb.jpg",
+        "thumbAlt": "Dashboard design for the Decoupled Live project"
+    },
+    "flexlabel": {
+        "thumb01": "https://folio22.s3.amazonaws.com/flex/home-card-thumb01.jpg",
+        "thumb01Alt": "Thumb alt",
+        "thumb02": "https://folio22.s3.amazonaws.com/flex/home-card-thumb02.jpg",
+        "thumb02Alt": "Thumb alt",
+        "thumb03": "https://folio22.s3.amazonaws.com/flex/home-card-thumb03.jpg",
+        "thumb03Alt": "Fulfillment in progress",
+        "thumb04": "https://folio22.s3.amazonaws.com/flex/home-card-thumb04.jpg",
+        "thumb04Alt": "Packing staff reviewing pick slip",
+        "thumb05": "https://folio22.s3.amazonaws.com/flex/home-card-thumb05.jpg",
+        "thumb05Alt": "Packer at work station",
+        "uspsLogo": "https://folio22.s3.amazonaws.com/logo-brands/logo-usps-mono.png",
+        "uspsLogoAlt": "USPS logo",
+        "fedexLogo": "https://folio22.s3.amazonaws.com/logo-brands/logo-fedex-mono.png",
+        "fedexLogoAlt": "Fedex logo",
+        "upsLogo": "https://folio22.s3.amazonaws.com/logo-brands/logo-usp-mono.png",
+        "upsLogoAlt": "UPS logo"
+    },
+    "webstore": {
+        "thumb01": "https://folio22.s3.amazonaws.com/webstore/home-illus02-thumb.jpg",
+        "thumb01Alt": "Webstore editor UI"
+    },
+    "dropship": {
+        "illusImg": "https://folio22.s3.amazonaws.com/illustration-dropship.png",
+        "illusImgAlt": "Dropship workflow diagram"
+    },
+    "dsm": {
+        "illusImg": "https://folio22.s3.amazonaws.com/home-illus-dsm.png",
+        "illusImgAlt": "Design system illustration"
+    },
+    "snippets": {
+        "1": "about this portfolio // This portfolio showcases selected work from my time with CommentSold, applying my skills in Product Design and User Experience. I live with my family in Atlanta, Georgia but I am from Ireland. artisan lead strategy product technical",
+        "2":  "The case studies showcase product design for livestream e-commerce is an exciting domain for a product designer to work in."
+    }
+}

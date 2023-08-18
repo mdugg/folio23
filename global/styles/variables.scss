@@ -1,0 +1,89 @@
+
+:root {
+  // typography
+  --text-sans: 'Inter', sans-serif;
+  --text-serif: 'Lora', serif;
+  --display-serif: 'DM Serif Display', serif;
+  --text-sans-bold: 600;
+  --text-serif-reg: 400;
+  --text-serif-med: 500;
+  // color palette
+  --folio-primary: #B5F100;
+  --folio-teal: #47ccd8;
+  --folio-turq: #20d3c1;
+  --folio-turq-light: #00ffe5;
+  --folio-turq-rgba: rgba(32, 211, 193, 1);
+  --folio-blue: #456bb9;
+  --folio-navy: #11214e;
+  --color-dcl: #B5F100;
+  --color-dcl-accent: #adff8a;
+  --color-flexlabel: #20d3c1;
+  --color-flexlabel-accent: #00ffe5;
+  --color-webstore: #45bee6;
+  --color-webstore-accent: #00e2ff;
+  --color-dropship: #ffc500;
+  --color-dropship-accent: #ffe300;
+  --color-dsm: #2a3e5a;
+  --color-dsm-accent: #8617e3;
+  --color-dsm-text: #ffd3d3;
+  // color palette grayscale
+  --folio-grey__dark01: #000;
+  --folio-grey__dark02: #333;
+  --folio-grey__dark03: #555;
+  --folio-grey__dark04: #777;
+  --folio-grey__light01: #999;
+  --folio-grey__light02: #BCBCBC;
+  --folio-grey__light03: #D4D4D4;
+  --folio-grey__light04: #E8E8E8;
+  --folio-grey__light05: #F3F3F3;
+  --folio-grey__light06: #F6F6F6;
+  // color palette tint
+  --folio-tint01: #C4D2CF;
+  --folio-tint02: #f3fffe;
+  // gradients
+  --gradient-resume: linear-gradient(65deg, rgba(232,232,232,1) 42%, rgba(181,241,0,1) 100%);;
+  // widths
+  // 40rem = 640dp
+  --width-minor: 30rem;
+  --width-reading: 40rem;
+  --width-projects: 60rem;
+  --width-resume: 80rem;
+  // spacing
+  --space0: 0rem;
+  --space025: .25rem;
+  --space05: .5rem;
+  --space075: .75rem;
+  --space1: 1rem;
+  --space125: 1.25rem;
+  --space15: 1.5rem;
+  --space175: 1.75rem;
+  --space2: 2rem;
+  --space225: 2.25rem;
+  --space25: 2.5rem;
+  --space275: 2.75rem;
+  --space3: 3rem;
+  --space325: 3.25rem;
+  --space35: 3.5rem;
+  --space375: 3.75rem;
+  --space4: 4rem;
+  --space5: 5rem;
+  --space6: 6rem;
+  --space7: 7rem;
+  --space8: 8rem;
+  // border radius
+  --radius-small: .5rem;
+  --radius-mid: 2rem;
+  --radius-large: 4rem;
+  // transitions
+  --transition01: all .3s ease-out;
+}
+
+// mixins
+@mixin width-reading {
+    width: 100%;
+    max-width: var(--width-reading);
+    }
+@mixin width-figma {
+    width: 100%;
+    max-width: var(--width-projects);
+    }

@@ -1,0 +1,315 @@
+header-video {
+    width: 100%;
+}
+
+.header-video {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: var(--folio-turq);
+}
+.header-video__content {
+    width: 100%;
+    margin: -10rem 0;
+    opacity:.4;
+}
+//
+.folio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.folio-project__tag {
+    font-family: var(--text-sans);
+    font-size: .875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.folio-content__text {
+    width: 100%;
+    max-width: var(--width-reading);
+    font-family: var(--text-sans);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.folio-content__figma {
+    // width: 100%;
+    width: var(--width-projects);
+
+    iframe {
+        width: 100%;
+        height: 30rem;
+        background-color: var(--color-grey__light05);
+        border-radius: .5rem;
+    }
+}
+.h3-content_section {
+    @extend .folio-project__tag;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        top: .5rem;
+        left: -2.5rem;
+        width: 2rem;
+        height: .3rem;
+        background-color: var(--folio-primary);
+        content:'';
+    }
+}
+// grid
+.folio-grid {
+    width: var(--width-projects);
+    display: grid;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+    &--2col {
+        grid-template-columns: 1fr 1fr;
+    }
+    &--3col {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    span {
+        border-radius: var(--radius-small);
+        overflow: hidden;
+    }
+}
+
+// content buttons and links
+.btn-primary {
+    color: var(--folio-blue);
+    font-family: var(--text-sans);
+    font-size: .875rem;
+    font-weight: 600;
+    border: 1px solid var(--folio-grey__light04);
+    border-radius: var(--radius-small);
+    padding: 1rem;
+
+    .icon-figma {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: .5rem;
+    }
+
+    &:hover {
+        border-color: var(--folio-turq);
+        background-color: var(--folio-tint02);
+    }
+
+    &--group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .icon-external {
+        height: 1rem;
+        width: 2rem;
+        padding-left: 1rem;
+    }
+}
+.btn-primary--link {
+    @extend .btn-primary;
+    color: var(--folio-grey__dark01);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition01);
+    text-decoration: none;
+}
+// mobile device
+.folio-mobile__device {
+    display: flex;
+    width: 20rem;
+    height: 40rem;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--folio-grey__light06);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.16);
+
+    span {
+        display:block;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        cursor: url("https://folio22.s3.amazonaws.com/folio-cursor-scroll.png"), move;
+    }
+}
+
+// DCL specific
+.dcl-brands {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    gap: 1rem;
+
+    span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border: 1px solid var(--folio-grey__light05);
+    }
+    .brand-amazon {
+        height: 2rem;
+        width: 6rem;
+    }
+    .brand-instagram {
+        height: 3rem;
+        width: 4rem;
+    }
+    .brand-facebook {
+        height: 3rem;
+        width: 4rem;
+    }
+    .brand-tiktok {
+        height: 3rem;
+        width: 4rem;
+    }
+    .brand-youtube {
+        height: 3rem;
+        width: 4rem;
+    }
+    .brand-ebay {
+        height: 2rem;
+        width: 6rem;
+    }
+}
+.theme-dcl {
+    .logo-videeo {
+        height: 5rem;
+        margin: 2rem 0;
+    }
+}
+// Webstore specific
+.webstore-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+.webstore-stats-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    .text {
+        width: 65%;
+        font-family: var(--text-sans);
+        font-size: 1.5rem;
+        font-weight: var(--text-sans-bold);
+        color: #fff;
+        line-height: 1.2;
+    }
+    .icon {
+        width: 30%;  
+        padding-left: 5%;  
+        fill: #fff;
+        font-family: var(--display-serif);
+        font-size: 3rem;
+        color: #fff;
+    }
+    .text-half {
+        @extend .text;
+        width: 50%;
+    }
+    .icon-half {
+        @extend .icon;
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        line-height: 1;
+    }
+}
+// Flexlabel specific
+.flexlabel-wins {
+    border: 1px solid var(--folio-grey__light04);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.flexlabel-win {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    .icon-star {
+        height: 2rem;
+        fill: #ffce00;
+        margin-right: 1rem;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.retro-localpickup {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .video {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .folio-grid,
+    .folio-content__figma {
+        width: calc(100% - 2rem);
+    }
+
+}
+@media screen and (max-width: 860px) {
+
+    .folio-content__text {
+        width: calc(100% - 4rem);
+    }
+    .webstore-stats {
+        grid-template-columns: 1fr;
+    }
+    .webstore-stats-item {
+        .icon {
+            max-height: 3rem;
+        }
+    }
+
+}
+@media screen and (max-width: 760px) {
+
+    .folio-grid--2col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button[data-figma] {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 560px) {
+
+    .dcl-brands {
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+    }
+
+}

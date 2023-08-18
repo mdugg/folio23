@@ -1,0 +1,190 @@
+// profile
+.folio-profile {
+    font-family: var(--text-sans);
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.folio-profile--layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: start;
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    border-radius: var(--radius-large);
+    background-color: var(--folio-grey__light06);
+    // background-color: var(--folio-navy);
+}
+// content
+profile-about {
+    grid-column-start: span 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+profile-gallery {
+    grid-column-start: span 6;
+}
+.folio-profile--content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+.folio-profile--title {
+    @extend .folio-home--title;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 1;
+}
+.folio-profile--text {
+    grid-column-start: 5;
+    grid-column-end: 12;
+    grid-template-rows: 1fr 1fr;
+    // color: #fff;
+    font-family: var(--text-sans);
+    line-height: 1.8;
+
+    .h3 {
+        color: var(--folio-turq);
+    }
+}
+.folio-profile--pic {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+
+    figcaption {
+        // color: #fff;
+        font-family: var(--text-serif);
+        font-size: .875rem;
+        line-height: 1.4;
+        padding: .5rem 0 0 2rem;
+    }
+}
+// gallery
+.folio-profile--gallery {
+    display: flex;
+    flex-direction: column;
+}
+.profile-travel--photos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-self: start;
+    gap: .5rem;
+
+    .photo {
+    }
+
+    .folio-caption {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    profile-about {
+        grid-column-start: span 7;
+    }
+    profile-gallery {
+        grid-column-start: span 5;
+    }
+
+    .profile-travel--photos {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+
+        .folio-caption {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+
+    .profile-travel--photos {
+        grid-template-columns: repeat(3, 1fr);
+
+        .folio-caption {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    profile-about {
+        grid-column-start: span 12;
+    }
+    profile-gallery {
+        grid-column-start: span 12;
+    }
+    .profile-travel--photos {
+        grid-template-columns: repeat(5, 1fr);
+
+        .folio-caption {
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    .folio-profile {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+@media screen and (max-width: 720px) {
+
+    .folio-profile--content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        gap: 0;
+    }
+    .folio-profile--title {
+        align-self: start;
+        margin-bottom: 3rem;
+    }
+    .folio-profile--pic {
+        figcaption {
+            padding-left:0;
+        }
+    }
+    .folio-profile--gallery {
+        margin-top: 2rem;
+    }
+    .profile-travel--photos {
+        grid-template-columns: repeat(4, 1fr);
+
+        .folio-caption {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+
+    .folio-profile--content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media screen and (max-width: 420px) {
+
+    .folio-profile--gallery {
+        display: none;
+    }
+}
